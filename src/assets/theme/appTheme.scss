@@ -1,0 +1,14 @@
+$primary-color: rgb(229, 42, 48);
+$secondary-color: rgb(255, 255, 255);
+$fade-color: rgb(128, 128, 128);
+$primary-font-color: rgb(0, 0, 0);
+$secondary-font-color: rgb(0, 0, 0);
+
+$primary-font: Arial;
+$secondary-font: Times;
+
+@mixin shadow{
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 8px -1px rgba(0,0,0,0.75)
+}
