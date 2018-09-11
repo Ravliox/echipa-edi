@@ -13,10 +13,10 @@ import VueWaypoint from 'vue-waypoint'
 import VueScrollTo from 'vue-scrollto'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCoffee)
+library.add(faAngleDown)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
@@ -53,5 +53,6 @@ const i18n = new VueI18n({
 
 new Vue({
   router,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

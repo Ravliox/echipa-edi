@@ -1,3 +1,10 @@
 {
-    
+    "header": {
+        "home": "Acasa",
+        "about": {
+            "name": "Despre",
+            "old": "Current version",
+            "new": "Previous Version"
+        }
+    }
 }
