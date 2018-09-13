@@ -1,5 +1,5 @@
 <template>
-  <div id = "normal-header">
+  <div id = "transparent-header">
     <nav class = "navbar">
       <div class = "navbar-brand">
         <router-link to="/" class = "navbar-item"><img :src="logo"  alt = "Logo Eveniment"></router-link>
@@ -58,6 +58,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/theme/headers.scss';
+.navbar, .navbar-menu, .navbar-brand, .navbar-end{
+  background-color: transparent !important;
+}
+
 </style>
 
 

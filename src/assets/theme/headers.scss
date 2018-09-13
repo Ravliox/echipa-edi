@@ -1,0 +1,36 @@
+.navbar {
+  min-height: 10vh;
+}
+
+.navbar-menu, .navbar-brand, .navbar-end{
+  background-color: $primary-color;
+}
+
+.navbar-item{
+  height: 100%;
+}
+
+a {
+  color: $primary-font-color;
+}
+
+.navbar-item img {
+  max-height: 5rem;
+}
+
+.navbar-item:hover{
+  background-color: $secondary-color;
+  color: $primary-font-color;;
+}
+
+.navbar-burger span {
+  background-color: $secondary-color;
+}
+
+.dropdown-item:hover {
+  background-color: $fade-color;
+}
+
+.navbar-link:hover {
+  background-color: $secondary-color;
+}
