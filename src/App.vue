@@ -1,8 +1,7 @@
 <template>
   <div id = "app">
-    <NormalHeader></NormalHeader>
-    <!-- <InvertedHeader></InvertedHeader> -->
-    <!-- <TransparentHeader></TransparentHeader> -->
+    <!-- <NormalHeader :data="header"></NormalHeader> -->
+    <InvertedHeader :data="header"></InvertedHeader>
     <router-view></router-view>
   </div>
 </template>
@@ -11,13 +10,18 @@
 <script>
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
-import TransparentHeader from '@/components/global-components/TransparentHeader'
 
 export default {
   components: {
     NormalHeader,
-    InvertedHeader,
-    TransparentHeader
+    InvertedHeader
+  },
+  data() {
+    return {
+      header: {
+        transparent: true
+      }
+    }
   }
 }
 </script>
@@ -25,7 +29,6 @@ export default {
 
 <style lang="scss">
 #app {
-  // background-color: red;
   min-height: 100vh;
 }
 

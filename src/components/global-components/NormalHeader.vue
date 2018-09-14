@@ -1,7 +1,7 @@
 <template>
   <div id = "normal-header">
-    <nav class = "navbar">
-      <div class = "navbar-brand">
+    <nav class = "navbar" :class="{'transparent': data.transparent}">
+      <div class = "navbar-brand" :class="{'transparent': data.transparent}">
         <router-link to="/" class = "navbar-item"><img :src="logo"  alt = "Logo Eveniment"></router-link>
         <div v-on:click="toggleBurger" class = "navbar-burger" v-bind:class="{'is-active':isActive}" data-target="navMenu">
           <span></span>
@@ -9,10 +9,10 @@
           <span></span>
         </div>
       </div>
-      <div class = "navbar-menu" v-bind:class="{'is-active': isActive}" id="navMenu">
+      <div class = "navbar-menu" v-bind:class="{'is-active': isActive, 'transparent': data.transparent}" id="navMenu">
         <div class = "navbar-start">
         </div>
-        <div class ="navbar-end" v-on:click="deactivate">
+        <div class ="navbar-end" v-on:click="deactivate" :class="{'transparent': data.transparent}">
           <div v-for = "item in routes" :key="routes.indexOf(item)"> 
             <router-link class = "navbar-item" :to="item.path.ro" v-if="item.hasChildren !== 'true'">{{$t(item.name)}} </router-link>
             <div class = "navbar-item has-dropdown is-hoverable" v-if="item.hasChildren === 'true'">
@@ -38,6 +38,9 @@
 import routes from '@/assets/resources/routes.json';
 
 export default {
+  props: [
+    'data'
+  ],
   data() {
     return {
       routes,
