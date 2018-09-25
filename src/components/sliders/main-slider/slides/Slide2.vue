@@ -10,7 +10,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+#slide2 {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
 </style>
 
 
