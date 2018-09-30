@@ -1,19 +1,58 @@
 <template>
-    <div class="nav-up-arrow">
-        <font-awesome-icon icon="faChevronUp"/>
+    <div>
+        <div id="waypoint-marker"></div>
+        <div class="waypoint" v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
+        <div class="nav-up-arrow" v-if="visible">
+            <a href="#" v-scroll-to="'#waypoint-marker'">
+                <font-awesome-icon class="up-icon" :icon="{ prefix: 'fas', iconName: 'chevron-up' }"/>
+            </a>
+        </div>
     </div>
 </template>
 
-
 <script>
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faChevronUp)
-
 export default {
-}
+  data: () => ({
+    intersectionOptions: {
+      root: null,
+      rootMargin: "0px 0px 0px 0px",
+      thresholds: [0]
+    },
+    visible: false
+  }),
+  methods: {
+    onWaypoint({ going, direction }) {
+      var directionTop = this.$waypointMap.DIRECTION_TOP;
+      var directionBottom = this.$waypointMap.DIRECTION_BOTTOM;
+      var goingIn = this.$waypointMap.GOING_IN;
+      var goingOut = this.$waypointMap.GOING_OUT;
+
+      if (going === goingIn && direction === directionTop) {
+        this.visible = true;
+        console.log(window.pageYOffset);
+      }
+      if (going === goingOut && direction === directionBottom) {
+        this.visible = false;
+      }
+    },
+    determineButtonVisibility() {
+      // offset of window from top of page
+      var windowOffset = window.pageYOffset;
+      // size of the current window
+      var windowSize = window.innerHeight;
+
+      if (windowOffset + windowSize > 1.6 * windowSize) {
+        this.visible = true;
+      } else {
+        this.visible = false;
+      }
+    }
+  },
+  mounted: function() {
+    // on refresh determine if button should be displayed or not
+    this.determineButtonVisibility();
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -25,7 +64,7 @@ export default {
   right: 30px;
   bottom: 30px;
   z-index: 9999999;
-  background-color: #555555;
+  background-color: lighten($primary-color, 10%);
   opacity: 0.8;
   filter: alpha(opacity=80);
   border: 0px solid;
@@ -35,19 +74,18 @@ export default {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.hiddenbutton {
-  display: none;
-}
-.markerr {
+.waypoint {
   position: absolute;
   top: 160vh;
 }
-.fa.fa-angle-up {
+.up-icon {
   font-size: 7vh;
   color: white;
+  margin-top: 0.5vh;
 }
-.nav-up-arrow span.icon {
-  margin-top: 2.2vh;
+#waypoint-marker {
+  position: absolute;
+  top: 0px;
 }
 </style>
 
