@@ -13,11 +13,11 @@ import VueWaypoint from 'vue-waypoint'
 import VueScrollTo from 'vue-scrollto'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleDown, faPhoneSquare} from '@fortawesome/free-solid-svg-icons'
+import { fas} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faAngleDown, faPhoneSquare, faFacebook)
+library.add(fas, fab)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
