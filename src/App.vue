@@ -7,6 +7,7 @@
     <Slider></Slider>
     <Rules></Rules>
     <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -16,13 +17,15 @@ import Rules from '@/components/registration-components/Rules'
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Slider from '@/components/sliders/main-slider/Slider'
+import Footer from '@/components/global-components/Footer'
 
 export default {
   components: {
     NormalHeader,
     InvertedHeader,
     Slider,
-    Rules
+    Rules,
+    Footer
   },
   data() {
     return {

@@ -1,13 +1,13 @@
 <template>
 	<div id = "rule">
 		<div class = "sectiune" v-on:click="toggleShow" v-bind:class="{'square-bottom':isShowing}" >
-			<span class = "unselectable">{{$t('register.rules.header' + rule)}}</span>
+			<span class = "unselectable">{{$t(rule.header)}}</span>
 			<span class="icon i-custom is-large is-hidden-mobile">
-				<i class="fa fa-angle-down" v-bind:class="{'icon-arrow-down': isRotated, 'icon-arrow-left': !isRotated}"></i>
+        <div><font-awesome-icon icon="angle-down"/></div>
 			</span>
 		</div>
     <transition name = "expand">
-		  <div v-if="isShowing" v-html="$t('register.rules.content' + rule)" class = "continut"></div>
+		  <div v-if="isShowing" v-html="$t(rule.content)" class = "continut"></div>
     </transition>
 	</div>
 </template>
@@ -50,7 +50,7 @@
     border-radius: 7px 7px 0px 0px;
   }
   .continut{
-    background-color: $secondary-color;
+    background-color: $fade-color;
     color: black;
     color: black;
     border-radius: 0px 0px 7px 7px;
