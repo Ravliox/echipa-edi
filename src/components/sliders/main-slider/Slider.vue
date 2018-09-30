@@ -35,11 +35,11 @@ export default {
 <style lang="scss">
 .carousel-cell {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
 }
 
 .flickity-page-dots {
-  bottom: 25px !important;
+  bottom: 40px !important;
 }
 
 .flickity-page-dots .dot {

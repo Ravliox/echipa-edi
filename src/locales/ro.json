@@ -6,5 +6,9 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    },
+    "footer": {
+        "contact": "Date de contact:",
+        "follow": "Urmareste si:"
     }
 }
