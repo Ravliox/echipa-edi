@@ -3,7 +3,7 @@
 		<div class = "sectiune" v-on:click="toggleShow" v-bind:class="{'square-bottom':isShowing}" >
 			<span class = "unselectable">{{$t(rule.header)}}</span>
 			<span class="icon i-custom is-large is-hidden-mobile">
-        <div><font-awesome-icon icon="angle-down"/></div>
+        <div><font-awesome-icon icon="angle-down" v-bind:class="{'icon-arrow-down': isRotated, 'icon-arrow-left': !isRotated}" /></div>
 			</span>
 		</div>
     <transition name = "expand">
