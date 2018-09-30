@@ -9,7 +9,7 @@
 	    <p class="title is-4">{{eestecer.nume}}</p>
 	    <span>{{$t(eestecer.functie)}}</span>
 	    <br>
-	    <!-- <span>{{$t('contact.cp.phone') + eestecer.telefon}}</span> -->
+	    <span>{{ eestecer.telefon}}</span>
 	    <br>
 	    <span>{{eestecer.email}}</span>
 	  </div>
