@@ -6,5 +6,11 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    }, 
+    "numbers": {
+        "image":"@/assets/images/Poza.jpg",
+        "header": "Numbers",
+        "subheader1": "Edi stie vue"
     }
+    
 }
