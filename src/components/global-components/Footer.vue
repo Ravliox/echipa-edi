@@ -3,12 +3,13 @@
     <div class = "columns">
       <div class = "column is-one-third first">
         <h2>{{$t("footer.contact")}}</h2>
-        <span><font-awesome-icon icon="phone-square" /> {{links.telefon}}</span>
+        <div><font-awesome-icon icon="phone-square" /> {{links.telefon}} </div>
       </div>
       <div class = "column is-one-third">
       </div>
       <div class = "column is-one-third last">
         <h2>{{$t("footer.follow")}}</h2>
+        <div><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }"/><a href = "facebookEESTEC">Facebook</a></div>
       </div>
     </div>
   </div>
