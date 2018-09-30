@@ -6,5 +6,20 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    },
+    "rules": {
+        "titlu": "edi suge la viata",
+        "rule1": {
+            "header": "ACesta este un header",
+            "content": "content1"
+        },
+        "rule2": {
+            "header": "ACesta este un header",
+            "content": "content2"
+        },
+        "rule3": {
+            "header": "ACesta este un header",
+            "content": "content3"
+        }
     }
 }
