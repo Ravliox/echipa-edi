@@ -1,0 +1,22 @@
+[
+    {
+        "titlu": "Mersi Edi",
+        "img": "../../assets/images/InfoCard/cat.png",
+        "text": "Super duper"
+    },
+    {
+        "titlu": "Mersi Edi",
+        "img": "@/assets/images/InfoCard/cat.png",
+        "text": "Super duper"
+    },
+    {
+        "titlu": "Mersi Edi",
+        "img": "@/assets/images/InfoCard/cat.png",
+        "text": "Super duper"
+    },
+    {
+        "titlu": "Mersi Edi",
+        "img": "@/assets/images/InfoCard/cat.png",
+        "text": "Super duper"
+    }
+]

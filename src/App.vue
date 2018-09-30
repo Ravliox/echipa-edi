@@ -5,7 +5,8 @@
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
     <Slider></Slider>
-    <router-view></router-view>
+    <InfoCard v-for = "item in infoCardContent" :cardcontent = "item"></InfoCard>
+    <router-view></router-view> 
   </div>
 </template>
 
@@ -14,18 +15,22 @@
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Slider from '@/components/sliders/main-slider/Slider'
+import InfoCard from '@/components/cards/InfoCard.vue'
+import infoCardContent from '@/assets/resources/InfoCard.json'
 
 export default {
   components: {
     NormalHeader,
     InvertedHeader,
-    Slider
+    Slider,
+    InfoCard
   },
   data() {
     return {
       header: {
         transparent: false
-      }
+      },
+      infoCardContent 
     }
   }
 }
