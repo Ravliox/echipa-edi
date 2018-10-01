@@ -13,6 +13,7 @@
 
 
 <script>
+import Rules from '@/components/registration-components/Rules'
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Footer from '@/components/global-components/Footer'
@@ -21,7 +22,8 @@ export default {
   components: {
     NormalHeader,
     InvertedHeader,
-    Footer
+    Footer,
+    Rules
   },
   data() {
     return {
