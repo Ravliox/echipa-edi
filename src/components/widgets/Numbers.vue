@@ -1,20 +1,18 @@
 <template>
   <div id="numbersSection">
-    <div v-waypoint="{ active: true, callback: startAnimation, options: intersectionOptions}"></div>
+    <div v-waypoint="{ active: true, callback: startAnimation, options: intersectionOptions }"></div>
     <div class="columns">
-      <template v-for="(section, index) in numbers">
-        <div class="column has-text-centered has-text-justified">
-           <img class = "pictogram" :src = "section.image">
-          <h1>{{$t(section.numbers)}}</h1>
-          <h2>{{$t(section.text)}}</h2>
-        </div>
-      </template>
+      <div class="column has-text-centered has-text-justified" v-for="(section, index) in numbers" :key="index">
+        <img class = "pictogram" :src = "section.image">
+        <h1>{{section.number}}</h1>
+        <h2>{{$t(section.text)}}</h2>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import numbers from '@/assets/resources/numbers.json'
+import numbers from '@/assets/resources/numbers.js'
 export default {
   data () {
     return {
@@ -33,13 +31,12 @@ export default {
     startAnimation: function () {
       if (!this.triggered) {
         this.triggered = true
-        var vueInstance = this
-        var interval = setInterval(function () {
-          vueInstance.count += 50
-          vueInstance.numbers.forEach(function (section) {
-            section.number = Math.floor(vueInstance.count / vueInstance.animationDuration * section.value)
+        var interval = setInterval(() => {
+          this.count += 50;
+          this.numbers.forEach((section) => {
+            section.number = Math.floor(this.count / this.animationDuration * section.value)
           })
-          if (vueInstance.count >= vueInstance.animationDuration) {
+          if (this.count >= this.animationDuration) {
             clearInterval(interval)
           }
         }, 50)

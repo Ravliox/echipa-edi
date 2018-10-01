@@ -4,14 +4,11 @@
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
-<<<<<<< HEAD
-    <Slider></Slider>
-    <Numbers></Numbers>
-=======
->>>>>>> 9db19c42c03fc4e64937eb0017ece15e404ecea9
-    <router-view></router-view>
-    
-    
+    <Numbers/>
+    <div class = "page">
+      <router-view></router-view>
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -19,24 +16,16 @@
 <script>
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
-<<<<<<< HEAD
-import Slider from '@/components/sliders/main-slider/Slider'
+import Footer from '@/components/global-components/Footer'
 import Numbers from '@/components/widgets/Numbers'
-import numbers from '@/assets/resources/numbers.json'
-=======
->>>>>>> 9db19c42c03fc4e64937eb0017ece15e404ecea9
 
 export default {
   components: {
     NormalHeader,
-<<<<<<< HEAD
     InvertedHeader,
-    Slider,
     Numbers,
-    numbers
-=======
-    InvertedHeader
->>>>>>> 9db19c42c03fc4e64937eb0017ece15e404ecea9
+    Footer
+
   },
   data() {
     return {
@@ -52,5 +41,9 @@ export default {
 <style lang="scss">
 #app {
   min-height: 100vh;
+}
+
+.page {
+  min-height: 65vh;
 }
 </style>

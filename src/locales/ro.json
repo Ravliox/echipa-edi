@@ -6,18 +6,21 @@
             "old": "Current version",
             "new": "Previous Version"
         }
-<<<<<<< HEAD
     }, 
     "numbers": {
         "image":"@/assets/images/Poza.jpg",
         "header": "Numbers",
         "subheader1": "Edi stie vue"
-=======
     },
     "footer": {
         "contact": "Date de contact:",
-        "follow": "Urmareste si:"
->>>>>>> 9db19c42c03fc4e64937eb0017ece15e404ecea9
+        "follow": "Urmareste si:",
+        "facebookBucharest": "EESTEC Bucuresti",
+        "facebookEveniment": "EESTEC Eveniment",
+        "linkedIn": "Linkedin EESTEC",
+        "instagram": "Instagram EESTEC",
+        "youtube": "Youtube EESTEC",
+        "address": "Splaiul Independentei Nr. 313, <br> AN204bis, Rectorat, UPB"
     }
     
 }
