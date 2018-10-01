@@ -6,11 +6,18 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+<<<<<<< HEAD
     }, 
     "numbers": {
         "image":"@/assets/images/Poza.jpg",
         "header": "Numbers",
         "subheader1": "Edi stie vue"
+=======
+    },
+    "footer": {
+        "contact": "Date de contact:",
+        "follow": "Urmareste si:"
+>>>>>>> 9db19c42c03fc4e64937eb0017ece15e404ecea9
     }
     
 }
