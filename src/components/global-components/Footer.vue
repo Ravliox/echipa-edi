@@ -1,5 +1,6 @@
 <template>
   <div id = "footer">
+    <div class="waypoint" v-waypoint="{ active: true, callback: stopHoverBar, options: intersectionOptions }"></div>
     <div class = "columns">
       <div class = "column is-one-third">
         <div>
@@ -32,7 +33,17 @@ import links from '@/assets/resources/links.json'
 export default {
   data() {
     return {
-      links
+      links,
+      intersectionOptions: {
+        root: null,
+        rootMargin: "0px 0px 0px 0px",
+        thresholds: [0]
+      }
+    }
+  },
+  methods: {
+    stopHoverBar() {
+      this.$emit("stop");
     }
   }
 }
