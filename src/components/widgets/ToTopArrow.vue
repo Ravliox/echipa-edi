@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <div id="waypoint-marker"></div>
-        <div class="waypoint" v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
-        <div class="nav-up-arrow" v-if="visible">
-            <a href="#" v-scroll-to="'#waypoint-marker'">
-                <font-awesome-icon class="up-icon" :icon="{ prefix: 'fas', iconName: 'chevron-up' }"/>
-            </a>
-        </div>
+  <div>
+    <div id="waypoint-marker"></div>
+    <div class="waypoint" v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
+    <div class="nav-up-arrow" v-if="visible">
+      <a href="#" v-scroll-to="'#waypoint-marker'">
+        <font-awesome-icon class="up-icon" :icon="{ prefix: 'fas', iconName: 'chevron-up' }"/>
+      </a>
     </div>
+  </div>
 </template>
 
 <script>
@@ -29,7 +29,6 @@ export default {
 
       if (going === goingIn && direction === directionTop) {
         this.visible = true;
-        console.log(window.pageYOffset);
       }
       if (going === goingOut && direction === directionBottom) {
         this.visible = false;
