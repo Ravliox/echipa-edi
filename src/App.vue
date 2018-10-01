@@ -4,7 +4,6 @@
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
-    <Slider></Slider>
     <router-view></router-view>
     <Footer></Footer>
   </div>
@@ -21,7 +20,6 @@ export default {
   components: {
     NormalHeader,
     InvertedHeader,
-    Slider,
     Footer
   },
   data() {
@@ -39,5 +37,4 @@ export default {
 #app {
   min-height: 100vh;
 }
-
 </style>
