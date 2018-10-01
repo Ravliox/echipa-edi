@@ -37,9 +37,4 @@ export default {
 #app {
   min-height: 100vh;
 }
-.test-to-top-arrow {
-  width: 100vw;
-  height: 250vh;
-  background-color: $primary-color;
-}
 </style>
