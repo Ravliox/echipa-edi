@@ -1,7 +1,7 @@
 <template>
   <div id = "rules">
     <h1 class = "title center">{{$t('rules.titlu')}}</h1>
-		<rule v-for="item in rules" :rule="item" class = "column"></rule>
+		<rule v-for="(item, index) in rules" :key="index" :rule="item" class = "column"></rule>
   </div>
 </template>
 
