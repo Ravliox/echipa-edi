@@ -10,6 +10,7 @@
         </div>
       </div>
       <div class = "column is-one-third">
+        <p> &copy; EESTEC Bucharest </p>
       </div>
       <div class = "column is-one-third">
         <div>
@@ -58,6 +59,10 @@ h2 {
   text-align: left;
   display: inline-block;
   font-size: 18px;
+}
+
+.column:nth-child(2) {
+  margin-top: auto;
 }
 
 a {
