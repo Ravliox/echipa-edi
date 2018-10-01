@@ -4,8 +4,9 @@
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
-    <Rules></Rules>
-    <router-view></router-view>
+    <div class = "page">
+      <router-view></router-view>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -38,5 +39,9 @@ export default {
 <style lang="scss">
 #app {
   min-height: 100vh;
+}
+
+.page {
+  min-height: 65vh;
 }
 </style>

@@ -28,6 +28,18 @@
     },
     "footer": {
         "contact": "Date de contact:",
-        "follow": "Urmareste si:"
+        "follow": "Urmareste si:",
+        "facebookBucharest": "EESTEC Bucuresti",
+        "facebookEveniment": "EESTEC Eveniment",
+        "linkedIn": "Linkedin EESTEC",
+        "instagram": "Instagram EESTEC",
+        "youtube": "Youtube EESTEC",
+        "address": "Splaiul Independentei Nr. 313, <br> AN204bis, Rectorat, UPB"
+    },
+    "countdown": {
+        "dz": "Zile",
+        "hrs": "Ore",
+        "min": "Minute",
+        "sec": "Secunde"
     }
 }
