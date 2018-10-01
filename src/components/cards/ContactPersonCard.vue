@@ -7,11 +7,9 @@
 	  </div>
 	  <div class="media-content">
 	    <p class="title is-4">{{eestecer.nume}}</p>
-	    <span>{{$t(eestecer.functie)}}</span>
-	    <br>
-	    <span>{{ eestecer.telefon}}</span>
-	    <br>
-	    <span>{{eestecer.email}}</span>
+	    <div>{{$t(eestecer.functie)}}</div>
+	    <div>{{ eestecer.telefon}}</div>
+	    <div>{{eestecer.email}}</div>
 	  </div>
 	</div>
 </template>

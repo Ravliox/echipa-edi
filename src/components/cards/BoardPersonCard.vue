@@ -1,18 +1,16 @@
 <template>
  <div class="box">
-	  	<div class = "columns is-multiline">
-	  		<div class="column">
-		      <figure class="image is-4by3">
-		        <img :src="organizer.img" :alt="organizer.nume">
-		      </figure>
-		    </div>
-		    <div class="column txt">
-		         <span class = "nume">{{organizer.nume}}</span>
-		         <br>
-		         <span class = "functie">{{$t(organizer.functie)}}</span>
-		    </div>
-	  	</div>
-	  
+	<div class = "columns is-multiline">
+		<div class="column">
+			<figure class="image is-4by3">
+				<img :src="organizer.img" :alt="organizer.nume">
+			</figure>
+		</div>
+		<div class="column txt">
+			<div class = "nume">{{organizer.nume}}</div>
+			<div class = "functie">{{$t(organizer.functie)}}</div>
+		</div>
+	</div>
 </div>
 </template>
 
