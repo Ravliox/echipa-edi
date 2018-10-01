@@ -25,8 +25,11 @@ export default {
   ],
   data () {
     return {
-      img: require(this.cardcontent.img)
+      img: require(`@/assets/images/InfoCard/${this.cardcontent.img}`)
     }
+  },
+  mounted() {
+    console.log(this.cardcontent);
   }
 }
 </script>

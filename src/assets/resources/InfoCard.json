@@ -1,22 +1,12 @@
 [
     {
         "titlu": "Mersi Edi",
-        "img": "../../assets/images/InfoCard/cat.png",
+        "img": "cat.png",
         "text": "Super duper"
     },
     {
         "titlu": "Mersi Edi",
-        "img": "@/assets/images/InfoCard/cat.png",
-        "text": "Super duper"
-    },
-    {
-        "titlu": "Mersi Edi",
-        "img": "@/assets/images/InfoCard/cat.png",
-        "text": "Super duper"
-    },
-    {
-        "titlu": "Mersi Edi",
-        "img": "@/assets/images/InfoCard/cat.png",
+        "img": "logo.png",
         "text": "Super duper"
     }
 ]
