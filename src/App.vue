@@ -4,10 +4,6 @@
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
-    <Slider></Slider>
-    <!-- The following div is used just to test the ToTopArrow -->
-    <div class="test-to-top-arrow"/>
-    <ToTopArrow/>
     <router-view></router-view>
     <Footer></Footer>
   </div>
@@ -19,15 +15,12 @@ import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Slider from '@/components/sliders/main-slider/Slider'
 import Footer from '@/components/global-components/Footer'
-import ToTopArrow from '@/components/widgets/ToTopArrow'
 
 export default {
   components: {
     NormalHeader,
     InvertedHeader,
-    Slider,
-    Footer,
-    ToTopArrow
+    Footer
   },
   data() {
     return {
