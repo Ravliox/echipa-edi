@@ -52,7 +52,6 @@
   .continut{
     background-color: $fade-color;
     color: black;
-    color: black;
     border-radius: 0px 0px 7px 7px;
     max-height: 250rem;
     width: 100%;
