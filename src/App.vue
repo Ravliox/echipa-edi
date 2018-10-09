@@ -60,6 +60,7 @@ Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamu
 
 
 <script>
+import Rules from '@/components/registration-components/Rules'
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Footer from '@/components/global-components/Footer'
