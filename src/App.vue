@@ -1,60 +1,16 @@
 <template>
   <div id = "app">
+    <!-- this waypoint has to be here beacuse it can't be inside a component because it could move when the component repositions -->
+    <div class="hoverbar-waypoint" v-waypoint="{ active: true, callback: stopHoverBar, options: intersectionOptions }"></div>
     <!-- <NormalHeader :data="header"></NormalHeader> -->
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
     <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
-    <HoverBar v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar>
-    <div class = "page">
-      <h1>Lorem ipsum dolor sit amet, ad liber feugiat usu. Te duo dictas equidem. Adolescens adversarium et vix, munere eleifend reprimique in duo. Suscipit interpretaris mei te, paulo intellegam sea ei, an sea saepe putent. Nam novum nominavi tacimates at, dicam admodum ad pri.
-
-Homero soleat invidunt vim ei, suas nostrud ei ius. No solum constituam temporibus eos, justo saepe nusquam duo ad, et vis semper verear meliore. Eu pro autem mundi quaerendum, eu qui tale tota definitionem, deserunt aliquando posidonium vim te. Vix solum semper te, quo an adhuc vidisse diceret. An iisque salutatus usu, id has verterem iudicabit. Ut vel magna posidonium, eu ius dicam platonem consequat, sumo possit blandit no ius.
-
-Cu mea etiam liberavisse instructior, electram cotidieque interpretaris nam in. Eam dictas saperet in, id nam doming constituto, in sed nibh autem philosophia. Qui congue deserunt ei, ad eos blandit convenire necessitatibus, vel in solet tation signiferumque. Sed ex natum choro melius. Error delectus disputando nec ut, wisi lucilius ex ius, labore lobortis voluptaria vix ut.
-
-Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim no modus legimus civibus. Cu mei ludus impedit. Cu est propriae adolescens, sanctus definiebas vituperata no qui. Cu per simul salutatus.
-
-Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
-<h1>Lorem ipsum dolor sit amet, ad liber feugiat usu. Te duo dictas equidem. Adolescens adversarium et vix, munere eleifend reprimique in duo. Suscipit interpretaris mei te, paulo intellegam sea ei, an sea saepe putent. Nam novum nominavi tacimates at, dicam admodum ad pri.
-
-Homero soleat invidunt vim ei, suas nostrud ei ius. No solum constituam temporibus eos, justo saepe nusquam duo ad, et vis semper verear meliore. Eu pro autem mundi quaerendum, eu qui tale tota definitionem, deserunt aliquando posidonium vim te. Vix solum semper te, quo an adhuc vidisse diceret. An iisque salutatus usu, id has verterem iudicabit. Ut vel magna posidonium, eu ius dicam platonem consequat, sumo possit blandit no ius.
-
-Cu mea etiam liberavisse instructior, electram cotidieque interpretaris nam in. Eam dictas saperet in, id nam doming constituto, in sed nibh autem philosophia. Qui congue deserunt ei, ad eos blandit convenire necessitatibus, vel in solet tation signiferumque. Sed ex natum choro melius. Error delectus disputando nec ut, wisi lucilius ex ius, labore lobortis voluptaria vix ut.
-
-Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim no modus legimus civibus. Cu mei ludus impedit. Cu est propriae adolescens, sanctus definiebas vituperata no qui. Cu per simul salutatus.
-
-Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
-<h1>Lorem ipsum dolor sit amet, ad liber feugiat usu. Te duo dictas equidem. Adolescens adversarium et vix, munere eleifend reprimique in duo. Suscipit interpretaris mei te, paulo intellegam sea ei, an sea saepe putent. Nam novum nominavi tacimates at, dicam admodum ad pri.
-
-Homero soleat invidunt vim ei, suas nostrud ei ius. No solum constituam temporibus eos, justo saepe nusquam duo ad, et vis semper verear meliore. Eu pro autem mundi quaerendum, eu qui tale tota definitionem, deserunt aliquando posidonium vim te. Vix solum semper te, quo an adhuc vidisse diceret. An iisque salutatus usu, id has verterem iudicabit. Ut vel magna posidonium, eu ius dicam platonem consequat, sumo possit blandit no ius.
-
-Cu mea etiam liberavisse instructior, electram cotidieque interpretaris nam in. Eam dictas saperet in, id nam doming constituto, in sed nibh autem philosophia. Qui congue deserunt ei, ad eos blandit convenire necessitatibus, vel in solet tation signiferumque. Sed ex natum choro melius. Error delectus disputando nec ut, wisi lucilius ex ius, labore lobortis voluptaria vix ut.
-
-Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim no modus legimus civibus. Cu mei ludus impedit. Cu est propriae adolescens, sanctus definiebas vituperata no qui. Cu per simul salutatus.
-
-Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
-<h1>Lorem ipsum dolor sit amet, ad liber feugiat usu. Te duo dictas equidem. Adolescens adversarium et vix, munere eleifend reprimique in duo. Suscipit interpretaris mei te, paulo intellegam sea ei, an sea saepe putent. Nam novum nominavi tacimates at, dicam admodum ad pri.
-
-Homero soleat invidunt vim ei, suas nostrud ei ius. No solum constituam temporibus eos, justo saepe nusquam duo ad, et vis semper verear meliore. Eu pro autem mundi quaerendum, eu qui tale tota definitionem, deserunt aliquando posidonium vim te. Vix solum semper te, quo an adhuc vidisse diceret. An iisque salutatus usu, id has verterem iudicabit. Ut vel magna posidonium, eu ius dicam platonem consequat, sumo possit blandit no ius.
-
-Cu mea etiam liberavisse instructior, electram cotidieque interpretaris nam in. Eam dictas saperet in, id nam doming constituto, in sed nibh autem philosophia. Qui congue deserunt ei, ad eos blandit convenire necessitatibus, vel in solet tation signiferumque. Sed ex natum choro melius. Error delectus disputando nec ut, wisi lucilius ex ius, labore lobortis voluptaria vix ut.
-
-Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim no modus legimus civibus. Cu mei ludus impedit. Cu est propriae adolescens, sanctus definiebas vituperata no qui. Cu per simul salutatus.
-
-Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
-<h1>Lorem ipsum dolor sit amet, ad liber feugiat usu. Te duo dictas equidem. Adolescens adversarium et vix, munere eleifend reprimique in duo. Suscipit interpretaris mei te, paulo intellegam sea ei, an sea saepe putent. Nam novum nominavi tacimates at, dicam admodum ad pri.
-
-Homero soleat invidunt vim ei, suas nostrud ei ius. No solum constituam temporibus eos, justo saepe nusquam duo ad, et vis semper verear meliore. Eu pro autem mundi quaerendum, eu qui tale tota definitionem, deserunt aliquando posidonium vim te. Vix solum semper te, quo an adhuc vidisse diceret. An iisque salutatus usu, id has verterem iudicabit. Ut vel magna posidonium, eu ius dicam platonem consequat, sumo possit blandit no ius.
-
-Cu mea etiam liberavisse instructior, electram cotidieque interpretaris nam in. Eam dictas saperet in, id nam doming constituto, in sed nibh autem philosophia. Qui congue deserunt ei, ad eos blandit convenire necessitatibus, vel in solet tation signiferumque. Sed ex natum choro melius. Error delectus disputando nec ut, wisi lucilius ex ius, labore lobortis voluptaria vix ut.
-
-Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim no modus legimus civibus. Cu mei ludus impedit. Cu est propriae adolescens, sanctus definiebas vituperata no qui. Cu per simul salutatus.
-
-Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
+    <div :class=" { mainContentMargin: hoverBar.fixed && !hoverBar.value}">
       <router-view></router-view>
     </div>
-    <HoverBar></HoverBar>
-    <Footer @stop=""></Footer>
+    <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar>
+    <Footer @stop="stopHoverBar"></Footer>
   </div>
 </template>
 
@@ -78,9 +34,15 @@ export default {
       header: {
         transparent: false
       },
+      intersectionOptions: {
+        root: null,
+        rootMargin: "0px 0px 0px 0px",
+        thresholds: [0]
+      },
       hoverBar: {
         value: false,
-        fixed: true
+        fixed: false,
+        text: "Here is some news about us"
       }
     }
   },
@@ -88,9 +50,18 @@ export default {
     hideHoverBar() {
       this.hoverBar.value = !this.hoverBar.value;
     },
-    stopHoverBar() {
-      console.log(this.hoverBar);
-      // this.hoverBar.fixed = !this.hoverBar.fixed;
+    stopHoverBar({ going, direction }) {
+      var directionTop = this.$waypointMap.DIRECTION_TOP;
+      var directionBottom = this.$waypointMap.DIRECTION_BOTTOM;
+      var goingIn = this.$waypointMap.GOING_IN;
+      var goingOut = this.$waypointMap.GOING_OUT;
+
+      if (going === goingIn && direction === directionTop) {
+        this.hoverBar.fixed = !this.hoverBar.fixed;
+      }
+      if (going === goingOut && direction === directionBottom) {
+        this.hoverBar.fixed = !this.hoverBar.fixed;
+      }
     }
   }
 }
@@ -100,10 +71,14 @@ export default {
 <style lang="scss">
 #app {
   min-height: 100vh;
+  position: relative;
 }
-
-.page {
-  min-height: 95vh;
-  padding: 50px 200px 0 200px;
+.hoverbar-waypoint {
+  position: absolute;
+  bottom: 25vh;
+  z-index: 1;
+}
+.mainContentMargin {
+  margin-bottom: 10vh;
 }
 </style>

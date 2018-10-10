@@ -1,6 +1,6 @@
 <template>
-  <div id = "hoverbar" class="notification" :class="{ fixed: true }">
-    <p>{{this.hoverBarData}}</p>
+  <div id = "hoverbar" class="notification" :class="{ fixed: hoverBarData.fixed }">
+    <p>{{this.hoverBarData.text}}</p>
     <button class="delete" @click="hideBar"></button>
   </div>  
 </template>
@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 #hoverbar {
-  margin-top: 75vh;
+  margin-bottom: 0;
   height: 10vh;
   width: 100%;
   background-color: rgb(63, 49, 49);
@@ -34,6 +34,7 @@ export default {
 }
 
 .fixed {
-  position: fixed !important; 
+  position: fixed !important;
+  bottom: 0px; 
 }
 </style>
