@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 #footer {
-  height: 25vh;
+  min-height: 25vh;
   background-color: $primary-color;
   text-align: center;
   color: $primary-font-color;

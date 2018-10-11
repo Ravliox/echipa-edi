@@ -71,6 +71,10 @@ export default {
 <style lang="scss">
 #app {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 100%;
+  justify-content: space-between;
   position: relative;
 }
 .hoverbar-waypoint {
