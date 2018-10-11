@@ -32,20 +32,21 @@ import links from '@/assets/resources/links.json'
 export default {
   data() {
     return {
-      links
+      links,
     }
+  },
+  methods: {
   }
 }
 </script>
 
 <style lang="scss" scoped>
 #footer {
-  height: 25vh;
+  min-height: 25vh;
   background-color: $primary-color;
   text-align: center;
   color: $primary-font-color;
 }
-
 h2 {
   font-size: 28px;
 }
