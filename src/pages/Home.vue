@@ -48,13 +48,11 @@ Ei est libris noster, vim no nonumes vivendo. Eos ad qualisque definiebas. Vim n
 Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamur deseruisse. Eu hinc harum inimicus pri, nemore semper fabellas ut mel. Eam eu habeo impedit, ius et habeo utroque tibique, eu vim iudico vulputate. Quis summo invidunt mea ea, et odio dictas honestatis vix, vis error philosophia deterruisset et.</h1>
       
     </div>
-    <Numbers />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Numbers from '@/components/widgets/Numbers'
 
 
 export default {
