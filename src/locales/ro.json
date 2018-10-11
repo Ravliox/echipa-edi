@@ -6,6 +6,11 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    }, 
+    "numbers": {
+        "image":"@/assets/images/Poza.jpg",
+        "header": "Numbers",
+        "subheader1": "Edi stie vue"
     },
     "rules": {
         "titlu": "edi suge la viata",
@@ -42,4 +47,5 @@
         "min": "Minute",
         "sec": "Secunde"
     }
+    
 }

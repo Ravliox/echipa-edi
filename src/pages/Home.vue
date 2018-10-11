@@ -54,9 +54,11 @@ Assum erroribus eos in, te detracto consequat disputando nec. Vis ut novum utamu
 <script>
 // @ is an alias to /src
 
+
 export default {
   name: 'home',
   components: {
+    Numbers
   }
 }
 </script>
