@@ -1,6 +1,6 @@
 <template>
   <div id="numbersSection">
-    <div v-waypoint="{ active: true, callback: startAnimation, options: intersectionOptions }"></div>
+    <div v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
     <div class="columns">
       <div class="column has-text-centered has-text-justified" v-for="(section, index) in numbers" :key="index">
         <img class = "pictogram" :src = "section.image">
@@ -28,6 +28,11 @@ export default {
     }
   },
   methods: {
+    onWaypoint ({ going, direction }) {
+      if (going === this.$waypointMap.GOING_IN) {
+        this.startAnimation();
+      }
+    },
     startAnimation: function () {
       if (!this.triggered) {
         this.triggered = true
