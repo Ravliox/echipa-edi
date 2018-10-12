@@ -1,25 +1,27 @@
 <template>
   <div id = "app">
-    <!-- <NormalHeader :data="header"></NormalHeader> -->
+    
     <InvertedHeader :data="header"></InvertedHeader>
-    <router-view></router-view>
+    <ContactForm></ContactForm>
   </div>
 </template>
 
 
 <script>
-import NormalHeader from '@/components/global-components/NormalHeader'
+
 import InvertedHeader from '@/components/global-components/InvertedHeader'
+import ContactForm from '@/components/contact-components/ContactForm'
 
 export default {
   components: {
-    NormalHeader,
-    InvertedHeader
+   
+    InvertedHeader,
+    ContactForm
   },
   data() {
     return {
       header: {
-        transparent: true
+        transparent: false
       }
     }
   }

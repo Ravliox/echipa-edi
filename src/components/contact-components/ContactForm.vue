@@ -1,6 +1,6 @@
 <template>
   <div id = "contactform">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
   	<div class = "header">
       <span class = "title font1"> {{$t('contact.contactform.title')}} </span>
       <br>
@@ -30,7 +30,7 @@
     	<div class = "column is-7">
     		<form>
     			<span class = "subtitle">{{$t('contact.contactform.message')}}</span>
-    			</br>
+    			<br>
     			<textarea v-model="message"></textarea>
     		</form>
     	</div>
@@ -45,95 +45,19 @@
       <p class = "subtitle success" v-if="sent"> {{$t(success_message)}} </p>
     </div>
   </div>
+  
 </template>
 
 <script>
   export default {
     data () {
       return {
-        name: '',
-        email_addr: '',
-        title: '',
-        telephone_number: '',
-        message: '',
-        invalid: false,
-        invalid_message: '',
-        sent: false,
-        name_error: 'contact.contactform.name_error',
-        email_error: 'contact.contactform.email_error',
-        title_error: 'contact.contactform.title_error',
-        msg_error: 'contact.contactform.msg_error',
-        success_message: 'contact.contactform.success_message',
-        tel: true
+       
       }
     },
-    /* eslint-disable */
+   
     methods: {
-      send: function () {
-        this.invalid = false
-        this.validate()
-        if (this.invalid === false) {
-          this.sent = true
-          if (this.telephone_number === '')
-          {
-            window.emailjs.init('user_iZ9xvISum1GIMaXOcy6bt')
-            window.emailjs.send("gmail", "template_rs0ElpqZ", {"title": this.title,"from_name": this.name, "email_address": this.email_addr, "to_name":"SSA Team","message_html": this.message}).then(function(response) {
-              console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-            }, function(err) {
-            console.log("FAILED. error=", err);
-            });
-          }
-          this.name = ''
-          this.email_addr = ''
-          this.title = ''
-          this.message = ''
-        }
-      },
-      validate_name: function () {
-        if (this.name === '') {
-          return false
-        }
-        return true
-      },
-      validate_email: function () {
-        if (this.email_addr === null) {
-          return false
-        }
-        let tokens = this.email_addr.split('@')
-        if (tokens.length !== 2) {
-          return false
-        } else if (tokens[0] === '' || tokens[1] === '') {
-          return false
-        }
-        return true
-      },
-      validate_title: function () {
-        if (this.title === '') {
-          return false
-        }
-        return true
-      },
-      validate_message: function () {
-        if (this.message === '') {
-          return false
-        }
-        return true
-      },
-      validate: function () {
-        if (this.validate_name() === false) {
-          this.invalid_message = this.name_error
-          this.invalid = true
-        } else if (this.validate_email() === false) {
-          this.invalid_message = this.email_error
-          this.invalid = true
-        } else if (this.validate_title() === false) {
-          this.invalid_message = this.title_error
-          this.invalid = true
-        } else if (this.validate_message() === false) {
-          this.invalid = true
-          this.invalid_message = this.msg_error
-        }
-      }
+     
     }
   }
 </script>
@@ -156,7 +80,7 @@
   display: none;
 }
 .details{
-	align: left;
+
 	margin-left: 5%;
 }
 input{
