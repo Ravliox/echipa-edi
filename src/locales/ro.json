@@ -6,9 +6,46 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    }, 
+    "numbers": {
+        "image":"@/assets/images/Poza.jpg",
+        "header": "Numbers",
+        "subheader1": "Edi stie vue"
+    },
+    "rules": {
+        "titlu": "edi suge la viata",
+        "rule1": {
+            "header": "SECȚIUNEA 1. ORGANIZATORUL ȘI REGULAMENTUL OFICIAL AL EVENIMENTULUI",
+            "content": "1.1. Evenimentul se va derula conform prevederilor prezentului Regulament oficial și se desfășoară în conformitate cu dispozițiile legale cuprinse în Ordonanța Guvernului nr. 99/2000, actualizată, privind comercializarea produselor și serviciilor de piață, fiind obligatoriu pentru toți Participanții la Eveniment. Regulamentul precum și detaliile evenimentului sunt disponibile fiecărui solicitant în mod gratuit pe website-ul http://www.eestec.ro/ssa/înscriere/ pe toată durata evenimentului.<br><br>1.2. Organizatorul își rezervă dreptul de a modifica Regulamentul pe parcursul desfășurării Evenimentului, având obligația de a anunța publicul în mod oficial, în aceeași manieră în care a fost făcută și informarea inițială, pe pagina oficială http://www.eestec.ro/ssa. Astfel de modificări vor fi făcute publice cu cel puțin 24 de ore înainte de intrarea în vigoare."
+        },
+        "rule2": {
+            "header": "ACesta este un header",
+            "content": "content2"
+        },
+        "rule3": {
+            "header": "ACesta este un header",
+            "content": "content3"
+        },
+        "rule4": {
+            "header": "regula 4",
+            "content": "text regula 4"
+        }
     },
     "footer": {
         "contact": "Date de contact:",
-        "follow": "Urmareste si:"
+        "follow": "Urmareste si:",
+        "facebookBucharest": "EESTEC Bucuresti",
+        "facebookEveniment": "EESTEC Eveniment",
+        "linkedIn": "Linkedin EESTEC",
+        "instagram": "Instagram EESTEC",
+        "youtube": "Youtube EESTEC",
+        "address": "Splaiul Independentei Nr. 313, <br> AN204bis, Rectorat, UPB"
+    },
+    "countdown": {
+        "dz": "Zile",
+        "hrs": "Ore",
+        "min": "Minute",
+        "sec": "Secunde"
     }
+    
 }
