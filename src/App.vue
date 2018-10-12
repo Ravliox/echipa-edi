@@ -2,21 +2,20 @@
   <div id = "app">
     <!-- this waypoint has to be here beacuse it can't be inside a component because it could move when the component repositions -->
     <div class="hoverbar-waypoint" v-waypoint="{ active: true, callback: stopHoverBar, options: intersectionOptions }"></div>
-    <!-- <NormalHeader :data="header"></NormalHeader> -->
+    <NormalHeader :data="header"></NormalHeader>
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
-    <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
-    <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader>
+    <!-- <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
+    <NormalHeader :data="header" class="is-hidden-desktop"></NormalHeader> -->
     <div :class=" { mainContentMargin: hoverBar.fixed && !hoverBar.value}">
       <router-view></router-view>
     </div>
-    <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar>
+    <!-- <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar> -->
     <Footer @stop="stopHoverBar"></Footer>
   </div>
 </template>
 
 
 <script>
-import Rules from '@/components/registration-components/Rules'
 import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Footer from '@/components/global-components/Footer'
