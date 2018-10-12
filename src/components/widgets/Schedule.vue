@@ -1,6 +1,6 @@
 <template>
   <div id = "schedule">
-    <div class = "columns is-multiline is-centered">
+    <div class = "columns is-multiline is-centered" :class="{columnSchedule : !multiline}">
       <div class = "column is-4 has-text-centered" v-for = "(dayData, index) in schedule" :key="index"> 
         <h1>{{dayData.day}}</h1>
         <h2>{{dayData.date}}</h2>
@@ -19,6 +19,9 @@
 import schedule from '@/assets/resources/schedule.js'
 
 export default {
+  props: [
+    "multiline"
+  ],
   data() {
     return {
       schedule
@@ -38,5 +41,16 @@ h2 {
 
 span {
   font-size: 24px;
+}
+
+.columnSchedule {
+  flex-direction: column !important;
+  width: 100%;
+  justify-content: center;
+}
+
+.columnSchedule > div {
+  width: 100%;
+  justify-content: center;
 }
 </style>
