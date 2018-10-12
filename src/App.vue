@@ -76,6 +76,7 @@ export default {
   justify-content: space-between;
   position: relative;
 }
+
 .hoverbar-waypoint {
   position: absolute;
   bottom: 25vh;
