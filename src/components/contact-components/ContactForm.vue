@@ -1,33 +1,5 @@
 <template>
-  <!-- <div id = "contactform">		
-        <form>
-    		
-        	<span class = "subtitle">{{$t('contact.contactform.message')}}</span>
-    			<br>
-    			
-        
-    		
-        </form>
-
-    	</div>
-
-    </div>
-    
-    <div class = "levels">
-      
-      <div class = "level-item">
-        <button class="button font1 is-success is-outlined is-large" v-on:click="send">{{$t('contact.contactform.send')}}</button>
-      </div>
-
-    </div>
-    
-    <div class = "wrapper">
-      <p class = "subtitle warning" v-if="invalid"> {{$t(invalid_message)}} </p>
-      <p class = "subtitle success" v-if="sent"> {{$t(success_message)}} </p>
-    </div>
-  </div> -->
-  
-        
+ 
     <div class="container">
       
         <div class="columns">
@@ -75,6 +47,8 @@
                       </div>
                   </div>
                   <!-- TELEPHONE -->
+                  <span>{{$t('contact.contactform.telephone')}}</span>
+	    			      <br>
                     <div class="field">
                         <div class="control">
                             <input class="input is-success" v-model="telephone_number" v-bind:class="{'telephone': tel}" type = "text">
@@ -104,9 +78,21 @@
         </div>
             </div>
           </div>
+          <div class = "wrapper">
+      <p class = "subtitle warning" v-if="invalid"> {{$t(invalid_message)}} </p>
+      <p class = "subtitle success" v-if="sent"> {{$t(success_message)}} </p>
+    </div>
         </div>
     
     </template>
+    			
+        
+
+    
+    
+ 
+  
+        
                       
                 
             
@@ -127,9 +113,6 @@
 </script>
 
 <style scoped>
-.column{
-  /* border: 1px solid; */
-}
 
 .container{
  
