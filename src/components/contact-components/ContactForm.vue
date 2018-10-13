@@ -1,72 +1,11 @@
 <template>
-  <div id = "contactform">
-    
-  	<div class = "header">
-      <span class = "title"> {{$t('contact.contactform.title')}} </span> 
-      <br>
-      <span class = "subtitle">{{$t('contact.contactform.subtitle')}}</span>
-    </div>
-
-    <div class = "columns" style="margin-left: 5%;">
-    	<div class = "column is-4">
-	    	<form>
-          
-	    		<div>
-	    			<span class = "subtitle">{{$t('contact.contactform.name')}}</span>
-	    			<br>
-            
-	    			
-            <div class="field">
-              <div class="control">
-                  <input class="input is-success" v-model="name" type = "text">
-              </div>
-            </div>
-	    		</div>
-
-	    		<div class = "labels">
-	    			<span>{{$t('contact.contactform.email')}}</span>
-	    			<br>
-            <div class="field">
-              <div class="control">
-                  <input class="input is-success" v-model="email_addr" type = "text">
-              </div>
-            </div>
-	    		</div>
-	    			
-	    		<div class = "labels">
-	    			<span>{{$t('contact.contactform.titlu')}}</span>
-	    			<br>
-	    			
-            <div class="field">
-              <div class="control">
-                  <input class="input is-success" v-model="title" type = "text">
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                
-                  <input class="input is-success" v-model="telephone_number" v-bind:class="{'telephone': tel}" type = "text">
-              </div>
-            </div>
-            
-	    		</div>
-
-	    	</form>
-
-    	</div>
-
-    	<div class = "column is-7">
-    		
+  <!-- <div id = "contactform">		
         <form>
     		
         	<span class = "subtitle">{{$t('contact.contactform.message')}}</span>
     			<br>
     			
-          <div class="field">
-            <div class="control">
-                  <textarea v-model="message" class="textarea is-success is-large" type="text" placeholder="Info textarea"></textarea>
-             </div>
-           </div>
+        
     		
         </form>
 
@@ -86,9 +25,92 @@
       <p class = "subtitle warning" v-if="invalid"> {{$t(invalid_message)}} </p>
       <p class = "subtitle success" v-if="sent"> {{$t(success_message)}} </p>
     </div>
-  </div>
+  </div> -->
   
-</template>
+        
+    <div class="container">
+      
+        <div class="columns">
+          <!-- HEADER -->
+          <div class="column has-text-centered">
+             <span 
+              class = "title"> 
+               {{$t('contact.contactform.title')}} 
+             </span> 
+             <br>
+              <span 
+                  class = "subtitle">
+                  {{$t('contact.contactform.subtitle')}}
+              </span>
+          </div>
+        </div>
+      
+      <div class="columns">
+        <!-- FORM -->
+        <div class="column is-6">
+            <form>
+              <div>
+                <!-- NAME -->
+	    			    <span class = "subtitle">{{$t('contact.contactform.name')}}</span>
+	    			    <br>
+                <div class="field">
+                  <div class="control">
+                      <input class="input is-success" v-model="name" type = "text">
+                  </div>
+                </div>
+                <!-- EMAIL -->
+                	<span>{{$t('contact.contactform.email')}}</span>
+	    			      <br>
+                  <div class="field">
+                    <div class="control">
+                        <input class="input is-success" v-model="email_addr" type = "text">
+                    </div>
+                  </div>
+                  <!-- TITLU -->
+                  <span>{{$t('contact.contactform.titlu')}}</span>
+	    			      <br>
+                  <div class="field">
+                      <div class="control">
+                          <input class="input is-success" v-model="title" type = "text">
+                      </div>
+                  </div>
+                  <!-- TELEPHONE -->
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-success" v-model="telephone_number" v-bind:class="{'telephone': tel}" type = "text">
+                    </div>
+                  </div>
+              </div>
+                </form>
+            </div>
+            <!-- TEXTAREA -->
+            <div class="column is-6">
+                <div class="field">
+                <div class="control">
+                      <textarea v-model="message" class="textarea is-success has-fixed-size" type="text" placeholder="Info textarea"></textarea>
+                </div>
+              </div>
+            </div>
+            
+          </div>  
+          <div class="columns">
+            <div class="column">
+              <div class = "levels">
+          
+          <div class = "level-item">
+            <button class="button font1 is-success is-outlined is-large" v-on:click="send">{{$t('contact.contactform.send')}}</button>
+          </div>
+
+        </div>
+            </div>
+          </div>
+        </div>
+    
+    </template>
+                      
+                
+            
+	    			
 
 <script>
   export default {
@@ -105,65 +127,18 @@
 </script>
 
 <style scoped>
-.header{
-	margin-top: 5px;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.title{
-	font-weight: bold;
-	font-size: 40px;
-}
-.labels{
-	padding-top: 25px;
-	font-size: 20px;
-}
-.telephone{
-  display: none;
+.column{
+  /* border: 1px solid; */
 }
 
-input{
-	margin-top: 5px;
-	padding-left: 5px;
-	width: 90%;
-	/* border: 2px solid var(--color1); */
-	height: 38px;
-  font-size: 18px;
+.container{
+ 
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.wrapper{
-	text-align: center;
-}
-/* button{
-	background-color: var(--color1);
-	border: none;
-	padding: 10px 20px 10px 20px;
-	font-size: 25px;
-	color: white;
-	font-weight: bold;
-	outline: none !important;
-  margin-top: 20px;
-  width: 15%;
-  min-width: 100px;
-} */
-/* button:hover{
-	color: white;
-	background-color: #002E70;
-}
-button:focus{
-	color: white;
-}
-button::-moz-focus-inner {
-   border: 0;
-} */
-.warning {
-  color: red;
-}
-.success {
-  color: green;
+.textarea{
+  margin-top:20px;
 }
 
-/* #contactform{
-  background-color: gray;
-} */
 </style>
