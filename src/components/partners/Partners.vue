@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import partners from '@/assets/resources/partners.json'
+import partners from '@/assets/resources/partners.js'
 export default {
   data () {
     return {
