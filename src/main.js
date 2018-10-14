@@ -11,12 +11,14 @@ import ro from './locales/ro.json'
 import Flickity from 'vue-flickity'
 import VueWaypoint from 'vue-waypoint'
 import VueScrollTo from 'vue-scrollto'
+import * as VueGoogleMaps from 'vue2-google-maps' 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faAngleDown)
+library.add(fas, fab)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
@@ -35,6 +37,12 @@ Vue.use(VueScrollTo, {
 
 Vue.use(Flickity)
 Vue.use(VueWaypoint)
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyAQLikAuA2vwuToJgv5DEWF16i5T1V9ieY',
+  }
+})
 
 Vue.config.productionTip = false
 

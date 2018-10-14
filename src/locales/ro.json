@@ -6,5 +6,77 @@
             "old": "Current version",
             "new": "Previous Version"
         }
+    }, 
+    "numbers": {
+        "image":"@/assets/images/Poza.jpg",
+        "header": "Numbers",
+        "subheader1": "Edi stie vue"
+    },
+    "register": {
+        "introduction": {
+            "introduction1":"amvkjf",
+            "join":"Inscrie-te!",
+            "introduction2":"ajvfjf",
+            "introduction3":"gfjgff",
+            "header":"DEP DE IT IL IUBESTE PE EDI"
+        },
+        "information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br /> sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "contactMap":{
+        "title": "Unde suntem?",
+        "lc_title": "EESTEC LC BUCHAREST",
+        "address1": "Splaiul Independentei 313, UPB",
+        "address2": "corp Rectorat, sala AN204bis",
+        "address3": "Sector 6, Bucuresti",
+        "telephone": "Telefon: 031 439 76 31",
+        "email": "E-mail: office@eestec.ro"
+    },
+    "rules": {
+        "titlu": "edi suge la viata",
+        "rule1": {
+            "header": "SECȚIUNEA 1. ORGANIZATORUL ȘI REGULAMENTUL OFICIAL AL EVENIMENTULUI",
+            "content": "1.1. Evenimentul se va derula conform prevederilor prezentului Regulament oficial și se desfășoară în conformitate cu dispozițiile legale cuprinse în Ordonanța Guvernului nr. 99/2000, actualizată, privind comercializarea produselor și serviciilor de piață, fiind obligatoriu pentru toți Participanții la Eveniment. Regulamentul precum și detaliile evenimentului sunt disponibile fiecărui solicitant în mod gratuit pe website-ul http://www.eestec.ro/ssa/înscriere/ pe toată durata evenimentului.<br><br>1.2. Organizatorul își rezervă dreptul de a modifica Regulamentul pe parcursul desfășurării Evenimentului, având obligația de a anunța publicul în mod oficial, în aceeași manieră în care a fost făcută și informarea inițială, pe pagina oficială http://www.eestec.ro/ssa. Astfel de modificări vor fi făcute publice cu cel puțin 24 de ore înainte de intrarea în vigoare."
+        },
+        "rule2": {
+            "header": "ACesta este un header",
+            "content": "content2"
+        },
+        "rule3": {
+            "header": "ACesta este un header",
+            "content": "content3"
+        },
+        "rule4": {
+            "header": "regula 4",
+            "content": "text regula 4"
+        }
+    },
+    "footer": {
+        "contact": "Date de contact:",
+        "follow": "Urmareste si:",
+        "facebookBucharest": "EESTEC Bucuresti",
+        "facebookEveniment": "EESTEC Eveniment",
+        "linkedIn": "Linkedin EESTEC",
+        "instagram": "Instagram EESTEC",
+        "youtube": "Youtube EESTEC",
+        "address": "Splaiul Independentei Nr. 313, <br> AN204bis, Rectorat, UPB"
+    },
+    "countdown": {
+        "dz": "Zile",
+        "hrs": "Ore",
+        "min": "Minute",
+        "sec": "Secunde"
+    },
+    "contact":{
+        "contactform":{
+            "title": "Contacteaza-ne",
+            "name": "Nume",
+            "email": "Email",
+            "titlu": "Titlu",
+            "telephone": "Numar de telefon",
+            "send": "Send",
+            "invalid_message": "Completeaza toate campurile",
+            "success_message": "Mesajul tau a fost trimis!"
+        }
     }
+    
 }
