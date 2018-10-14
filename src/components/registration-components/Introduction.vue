@@ -1,7 +1,5 @@
 <template>
   <div id = "introduction">
-    <!-- <p>{{$t('register.introduction.introduction1')}}</p>
-    <p>{{$t('register.introduction.introduction2')}}</p> -->
     <h1>{{$t('register.introduction.header')}}</h1>
     <a href="https://goo.gl/forms/26fmHfvFUhaYFgvA3" type = "button" class = "button">{{$t('register.introduction.join')}}</a>
     <!--<h1 class = "header1"> {{$t("home.mainslider.end")}} </h1>-->
