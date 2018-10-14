@@ -54,6 +54,7 @@ h2 {
 .columns {
   height: 100%;
   padding: 10px 50px 0px 50px;
+  margin-bottom: 0 !important;
 }
 
 .column > div {

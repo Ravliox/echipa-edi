@@ -6,7 +6,13 @@
             "old": "Current version",
             "new": "Previous Version"
         }
-    }, 
+    },
+    "home": {
+        "eestec": {
+            "title":"Despre EESTEC",
+            "about":"n anul 2003, un grup de studenți cu inițiativă înființau organizația EESTEC LC Bucharest. 14 ani mai târziu, alți studenți le duc moștenirea mai departe. Noi suntem EESTEC (LC Bucharest), prezenți în peste 50 de universități europene și activi în Politehnica București. Viziunea noastră este aceea de a ajuta studenții să-și construiască viitorul, iar activitatea noastră se bazează pe integritate, profesionalism, pasiune, entuziasm și spirit de echipă. Pentru noi, acasă înseamnă AN204bis din Rectoratul Politehnicii București, unde atât cu muncă, cât și cu distracție, organizăm evenimente pentru studenți, din București, din țară sau din lume. EESTEC te învață să studentEŞTI!"
+        }
+    },
     "numbers": {
         "image":"@/assets/images/Poza.jpg",
         "header": "Numbers",
