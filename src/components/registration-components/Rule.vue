@@ -51,7 +51,6 @@
   }
   .continut{
     background-color: $fade-color;
-    color: black;
     border-radius: 0px 0px 7px 7px;
     max-height: 250rem;
     width: 100%;
@@ -88,11 +87,11 @@
     padding-bottom: 10px;
   }
   .unselectable {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 </style>
