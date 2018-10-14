@@ -1,7 +1,7 @@
 <template>
   <div id = "app">
     <!-- this waypoint has to be here beacuse it can't be inside a component because it could move when the component repositions -->
-    <div class="hoverbar-waypoint" v-waypoint="{ active: true, callback: stopHoverBar, options: intersectionOptions }"></div>
+    <div v-if="hasHoverBar" class="hoverbar-waypoint" v-waypoint="{ active: true, callback: stopHoverBar, options: intersectionOptions }"></div>
     <NormalHeader :data="header"></NormalHeader>
     <!-- THESE TWO LINES HAVE TO BE TOGETHER. INVERTED HEADER DOES NOT WORK ON MOBILE -->
     <!-- <InvertedHeader :data="header" class="is-hidden-mobile"></InvertedHeader>
@@ -9,7 +9,7 @@
     <div :class=" { mainContentMargin: hoverBar.fixed && !hoverBar.value}">
       <router-view></router-view>
     </div>
-    <!-- <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar> -->
+    <!-- <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value && hasHoverBar" :hoverBarData="hoverBar"></HoverBar> -->
     <Footer @stop="stopHoverBar"></Footer>
   </div>
 </template>
@@ -30,6 +30,7 @@ export default {
   },
   data() {
     return {
+      hasHoverBar: false,
       header: {
         transparent: false
       },
