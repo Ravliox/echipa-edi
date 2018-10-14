@@ -1,3 +1,4 @@
+// Colors
 $primary-color: rgb(229, 42, 48);
 $secondary-color: rgb(255, 255, 255);
 $fade-color: lighten(rgb(0, 0, 0), 90%);
@@ -5,11 +6,15 @@ $primary-font-color: rgb(0, 0, 0);
 $secondary-font-color: rgb(0, 0, 0);
 $card-color: rgb(255, 255, 255);
 
+// Fonts
 $error: rgb(254, 56, 95);
 $success: rgb(35, 209, 96);
 
 $primary-font: Arial;
 $secondary-font: Times;
+
+// Dimensions
+$video-hero-height: 100vh;
 
 @mixin shadow{
   -webkit-box-shadow: 0px 4px 8px -1px rgba(0,0,0,0.75);

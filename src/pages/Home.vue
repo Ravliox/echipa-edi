@@ -4,15 +4,15 @@
 </template>
 
 <script>
-  import Partners from '@/components/partners/Partners'
-  export default {
-    name: 'home',
-    components: {
-    },
-    data() {
-      return {
-      }
+
+export default {
+  name: 'home',
+  components: {
+  },
+  data() {
+    return {
     }
+  }
 }
 </script>
 
