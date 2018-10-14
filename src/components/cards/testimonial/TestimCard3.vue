@@ -22,7 +22,6 @@ figure.snip1167 {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 50vh 1%;
   min-width: 220px;
   max-width: 450px;
   width: 100%;

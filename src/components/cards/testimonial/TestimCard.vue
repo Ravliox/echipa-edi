@@ -23,9 +23,8 @@ figure.snip1204 {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 50vh 1%;
   min-width: 220px;
-  max-width: 450px;
+  max-width: 100%;
   width: 100%;
   color: #333;
   text-align: left;
@@ -56,6 +55,7 @@ figure.snip1204 blockquote {
   font-size: 0.8em;
   font-weight: 500;
   margin: 0 0 -40px;
+  height: 275px;
   line-height: 1.6em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }

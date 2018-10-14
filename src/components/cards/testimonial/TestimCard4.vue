@@ -24,7 +24,6 @@ export default {
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 50vh 1%;
     min-width: 220px;
     max-width: 450px;
     width: 100%;
@@ -111,6 +110,6 @@ export default {
       figure.snip1157 {
           margin: 3% 1%;
   }
-  }
+}
 
 </style>
