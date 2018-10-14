@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Partners/>
   </div>
 </template>
 
@@ -9,7 +8,6 @@
   export default {
     name: 'home',
     components: {
-      Partners
     },
     data() {
       return {
