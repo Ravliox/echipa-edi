@@ -11,7 +11,6 @@
     </div>
     <!-- <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value" :hoverBarData="hoverBar"></HoverBar> -->
     <Footer @stop="stopHoverBar"></Footer>
-    <ContactMap/>
   </div>
 </template>
 
@@ -21,15 +20,13 @@ import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Footer from '@/components/global-components/Footer'
 import HoverBar from '@/components/global-components/HoverBar'
-import ContactMap from '@/components/contact/ContactMap'
 
 export default {
   components: {
     NormalHeader,
     InvertedHeader,
     Footer,
-    HoverBar,
-    ContactMap
+    HoverBar
   },
   data() {
     return {
