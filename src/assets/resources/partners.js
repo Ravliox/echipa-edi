@@ -3,13 +3,13 @@ let partners = [
       name: "PARTENERI SILVER",
       content: [
           {
-              name: "L'Oreal",
-              logo: "/ssa/partners/1partener silver (1).png",
+              name: "Iss",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           },
           {
-              name: "Nestle",
-              logo: "/ssa/partners/1partener silver (2).png",
+              name: "Adfaber",
+              logo: require("@/assets/images/parteners/logoadfaber.png"),
               link: ""
           }
       ]
@@ -19,7 +19,7 @@ let partners = [
       content: [
           {
               name: "Credis",
-              logo: "/ssa/partners/2partener anual.png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: "https://www.academiacredis.ro/"
           }
       ]
@@ -29,7 +29,7 @@ let partners = [
       content: [
           {
               name: "EESTEC Soft Skills Academy",
-              logo: "/ssa/partners/3suported by.PNG",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           }
       ]
@@ -39,27 +39,27 @@ let partners = [
       content: [
           {
               name: "Bogdan Gribincea",
-              logo: "/ssa/partners/academic (1).png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           },
           {
               name: "SoftVenture",
-              logo: "/ssa/partners/academic (2).png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           },
           {
               name: "Enel",
-              logo: "/ssa/partners/academic (3).png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           },
           {
               name: "Rubicle",
-              logo: "/ssa/partners/academic (5).png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           },
           {
               name: "UBP",
-              logo: "/ssa/partners/upb.jpg",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: ""
           }
       ]
@@ -69,7 +69,7 @@ let partners = [
       content: [
           {
               name: "Buzzcamp",
-              logo: "/ssa/partners/media (1).png",
+              logo: require("@/assets/images/parteners/iss.png"),
               link: "http://buzzcamp.ro"
           }
         ]

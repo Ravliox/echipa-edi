@@ -86,6 +86,7 @@ div:nth-of-type(4) > a:nth-of-type(1) {
   filter: grayscale(100%);
   opacity: 0.66;
   transition: all 0.3s ease;
+  max-height:20vh;
 }
 .partner > img:hover{
   filter: grayscale(0%);
