@@ -12,6 +12,25 @@
         "header": "Numbers",
         "subheader1": "Edi stie vue"
     },
+    "register": {
+        "introduction": {
+            "introduction1":"amvkjf",
+            "join":"Inscrie-te!",
+            "introduction2":"ajvfjf",
+            "introduction3":"gfjgff",
+            "header":"DEP DE IT IL IUBESTE PE EDI"
+        },
+        "information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br /> sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "contactMap":{
+        "title": "Unde suntem?",
+        "lc_title": "EESTEC LC BUCHAREST",
+        "address1": "Splaiul Independentei 313, UPB",
+        "address2": "corp Rectorat, sala AN204bis",
+        "address3": "Sector 6, Bucuresti",
+        "telephone": "Telefon: 031 439 76 31",
+        "email": "E-mail: office@eestec.ro"
+    },
     "rules": {
         "titlu": "edi suge la viata",
         "rule1": {
@@ -49,13 +68,14 @@
     },
     "contact":{
         "contactform":{
-            "subtitle":"ma-ta",
-            "title":"edi suge la viata",
-            "name":"Stanciu",
-            "email":"sdasd",
-            "titlu":"sdasd",
-            "telephone":"sdasd",
-            "send":"Send"
+            "title": "Contacteaza-ne",
+            "name": "Nume",
+            "email": "Email",
+            "titlu": "Titlu",
+            "telephone": "Numar de telefon",
+            "send": "Send",
+            "invalid_message": "Completeaza toate campurile",
+            "success_message": "Mesajul tau a fost trimis!"
         }
     }
     
