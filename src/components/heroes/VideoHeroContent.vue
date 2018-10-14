@@ -19,8 +19,8 @@ export default {
 
 <style scoped lang="scss">
 .button.is-primary.is-inverted.is-outlined {
-    border-color:#363636;
-    color:#363636;
+    border-color: $primary-font-color;
+    color: $primary-font-color;
     margin-top: 5vh;
     font-weight:700;
     border-width: 2px;
@@ -28,8 +28,8 @@ export default {
 }
 .button.is-primary.is-inverted.is-outlined:hover {
     background-color:transparent;
-    color:#008c8c;
-    border-color:#008c8c;
+    color:$primary-color;
+    border-color:$primary-color;
 }
 #videoherocontent {
     text-align: center;
@@ -45,7 +45,7 @@ p {
     font-size: 3vh;
     font-weight: bold;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
     h1{
         font-size: 6vh !important;
     }
