@@ -65,6 +65,18 @@
         "hrs": "Ore",
         "min": "Minute",
         "sec": "Secunde"
+    },
+    "contact":{
+        "contactform":{
+            "title": "Contacteaza-ne",
+            "name": "Nume",
+            "email": "Email",
+            "titlu": "Titlu",
+            "telephone": "Numar de telefon",
+            "send": "Send",
+            "invalid_message": "Completeaza toate campurile",
+            "success_message": "Mesajul tau a fost trimis!"
+        }
     }
     
 }
