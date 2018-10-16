@@ -3,7 +3,6 @@
     <!-- HEADER -->
     <div class = "has-text-centered">
       <div class = "title"> {{$t('contact.contactform.title')}} </div> 
-      <div class = "subtitle">{{$t('contact.contactform.subtitle')}}</div>
     </div>
     <div class="columns">
       <!-- FORM -->
@@ -13,28 +12,28 @@
           <span>{{$t('contact.contactform.name')}}</span>
           <div class="field">
             <div class="control">
-              <input class="input is-success" v-model="name" type = "text">
+              <input class="input" v-model="name" type = "text">
             </div>
           </div>
           <!-- EMAIL -->
           <span>{{$t('contact.contactform.email')}}</span>
           <div class="field">
             <div class="control">
-              <input class="input is-success" v-model="email_addr" type = "text">
+              <input class="input" v-model="email_addr" type = "text">
             </div>
           </div>
           <!-- TITLU -->
           <span>{{$t('contact.contactform.titlu')}}</span>
           <div class="field">
             <div class="control">
-              <input class="input is-success" v-model="title" type = "text">
+              <input class="input" v-model="title" type = "text">
             </div>
           </div>
           <!-- TELEPHONE -->
           <span class = "telephone">{{$t('contact.contactform.telephone')}}</span>
           <div class="field telephone">
             <div class="control">
-              <input class="telephone input is-success" v-model="telephone_number" type = "text">
+              <input class="telephone input" v-model="telephone_number" type = "text">
             </div>
           </div>
         </form>
@@ -43,7 +42,7 @@
       <div class="column is-6">
         <div class="field">
           <div class="control">
-            <textarea v-model="message" class="textarea is-success has-fixed-size" type="text" 
+            <textarea v-model="message" class="textarea has-fixed-size" type="text" 
             placeholder="Write your message here!"></textarea>
           </div>
         </div>
@@ -51,7 +50,7 @@
     </div>
     <div class = "sending-area">
       <div class = "button-area"> 
-        <button class="button is-success is-outlined is-large" 
+        <button class="button is-outlined is-large" 
           v-on:click="send">{{$t('contact.contactform.send')}}</button>
       </div>
       <div class = "output-area">
