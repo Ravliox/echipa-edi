@@ -1,7 +1,7 @@
 <template>
 	<div class="box">
 	  <div class = "media-center">
-	    <figure class="image is-4by3">
+	    <figure class="image is-3by3">
 	      <img :src = "eestecer.img" :alt="eestecer.nume">
 	    </figure>
 	  </div>
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-
 export default{
   name: 'ContactPersonCard',
   props: [
@@ -39,6 +38,7 @@ span{
 }
 div{
 	text-align: center;
+	margin-bottom:0px;
 }
 img{
 	border-radius: 50%;
@@ -49,5 +49,8 @@ img{
   display:inline-block;
   height: 100%;
   width: 275px;
+}
+img {
+	margin: auto;
 }
 </style>
