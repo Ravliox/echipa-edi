@@ -68,9 +68,208 @@ let partners = [
       name: "PARTENERI MEDIA",
       content: [
           {
-              name: "Buzzcamp",
-              logo: require("@/assets/images/parteners/iss.png"),
-              link: "http://buzzcamp.ro"
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },
+          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
+          },          {
+            name: "Buzzcamp",
+            logo: require("@/assets/images/parteners/iss.png"),
+            link: "http://buzzcamp.ro"
           }
         ]
     }
