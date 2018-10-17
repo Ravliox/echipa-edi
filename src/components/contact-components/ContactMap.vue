@@ -53,33 +53,39 @@
 </script>
 
 <style lang="scss">
-  div{
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .title{
-    font-weight: bold;
-    font-size: 40px;
-  }
-  h2{
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .details{
-    margin-top: 80px;
-  }
-  .google-map {
-          width: 100%;
-          height:100%;
-          min-height: 450px;
-          background-color: grey;
-          margin-right: 50px;
-        }
-  .date{
-    margin-top: 40px;
-    font-size: 20px;
-  }
-  .vue-map {
-    margin-bottom:0px!important;
-  }
+div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 80px;
+}
+
+.google-map {
+  width: 100%;
+  height:100%;
+  min-height: 450px;
+  background-color: grey;
+  margin-right: 50px;
+}
+
+.date {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.vue-map {
+  margin-bottom:0px!important;
+}
 </style>

@@ -3,12 +3,12 @@
 	<div class = "columns is-multiline">
 		<div class="column">
 			<figure class="image is-4by3">
-				<img :src="organizer.img" :alt="organizer.nume">
+				<img :src="organizer.img" :alt="organizer.name">
 			</figure>
 		</div>
 		<div class="column txt">
-			<div class = "nume">{{organizer.nume}}</div>
-			<div class = "functie">{{$t(organizer.functie)}}</div>
+			<div class = "name">{{organizer.name}}</div>
+			<div class = "function">{{$t(organizer.function)}}</div>
 		</div>
 	</div>
 </div>
@@ -41,13 +41,13 @@
 figure{
 	margin: auto;
 }
-.nume{
+.name{
 	font-size: 25px;
 	font-family: OpenSanssB;
 	line-height: 80%;
   margin: auto;
 }
-.functie{
+.function{
 	font-size: 15px;
 }
 

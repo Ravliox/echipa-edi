@@ -129,6 +129,4 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
-
-
 </style>

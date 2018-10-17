@@ -1,13 +1,13 @@
 <template>
 	<div id = "rule">
-		<div class = "sectiune" v-on:click="toggleShow" v-bind:class="{'square-bottom':isShowing}" >
+		<div class = "rule-section" v-on:click="toggleShow" v-bind:class="{'square-bottom':isShowing}" >
 			<span class = "unselectable">{{$t(rule.header)}}</span>
 			<span class="icon i-custom is-large is-hidden-mobile">
         <div><font-awesome-icon icon="angle-down" v-bind:class="{'icon-arrow-down': isRotated, 'icon-arrow-left': !isRotated}" /></div>
 			</span>
 		</div>
     <transition name = "expand">
-		  <div v-if="isShowing" v-html="$t(rule.content)" class = "continut"></div>
+		  <div v-if="isShowing" v-html="$t(rule.content)" class = "rule-content"></div>
     </transition>
 	</div>
 </template>
@@ -38,7 +38,8 @@
   #rule{
     margin-bottom: 25px;
   }
-  .sectiune{
+  
+  .rule-section{
     background-color: $primary-color;
     font-size: 25px;
     font-weight: bold;
@@ -46,10 +47,12 @@
     padding: 10px;
     cursor: pointer;
   }
+
   .square-bottom {
     border-radius: 7px 7px 0px 0px;
   }
-  .continut{
+
+  .rule-content{
     background-color: $fade-color;
     border-radius: 0px 0px 7px 7px;
     max-height: 250rem;
@@ -58,34 +61,42 @@
     padding :10px;
     font-size: 15px;
   }
+
   .icon-arrow-down {
     transform: rotate(0deg);
     transition: transform 0.1s linear;
   }
+
   .icon-arrow-left {
     transform: rotate(90deg);
     transition: transform 0.1s linear;
   }
+
   .expand-enter-active{
     transition: all 0.9s;
     padding :10px;
   }
+
   .expand-enter{
     max-height: 0px;
     padding :10px;
   }
+
   .expand-leave-active {
     transition: all 0.3s;
     padding :10px;
   }
+
   .expand-leave-to {
     padding :10px;
     max-height: 0px;
   }
+
   .i-custom{
     float: right;
     padding-bottom: 10px;
   }
+
   .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

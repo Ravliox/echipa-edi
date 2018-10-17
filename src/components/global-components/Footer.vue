@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import links from '@/assets/resources/links.json'
+import links from '@/assets/resources/links.js'
 
 export default {
   data() {

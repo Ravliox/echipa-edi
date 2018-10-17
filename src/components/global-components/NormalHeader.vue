@@ -35,7 +35,7 @@
 
 
 <script>
-import routes from '@/assets/resources/routes.json';
+import routes from '@/assets/resources/routes.js';
 
 export default {
   props: [
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/theme/headers.scss';
+@import './headers.scss';
 </style>
 
 
