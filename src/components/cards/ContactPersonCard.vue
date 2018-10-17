@@ -2,14 +2,14 @@
 	<div class="box">
 	  <div class = "media-center">
 	    <figure class="image is-3by3">
-	      <img :src = "eestecer.img" :alt="eestecer.nume">
+	      <img :src = "contactPerson.img" :alt="contactPerson.name">
 	    </figure>
 	  </div>
 	  <div class="media-content">
-	    <p class="title is-4">{{eestecer.nume}}</p>
-	    <div>{{$t(eestecer.functie)}}</div>
-	    <div>{{ eestecer.telefon}}</div>
-	    <div>{{eestecer.email}}</div>
+	    <p class="title is-4">{{ contactPerson.name }}</p>
+	    <div>{{ $t(contactPerson.function) }}</div>
+	    <div>{{ contactPerson.phone }}</div>
+	    <div>{{ contactPerson.email }}</div>
 	  </div>
 	</div>
 </template>
@@ -18,7 +18,7 @@
 export default{
   name: 'ContactPersonCard',
   props: [
-    'eestecer'
+    'contactPerson'
   ],
   data () {
     return {
