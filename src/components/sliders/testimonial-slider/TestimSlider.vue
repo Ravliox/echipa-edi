@@ -2,10 +2,10 @@
   <div class="testimonial">
     <h2>Ce barfesc astia despre noi</h2>
     <flickity  class="flickity" ref="flickity" :options="flickityOptions">
-      <div class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
+      <div v-if = "!normalQuotes" class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
         <TestimCard  :testimContent="slide"></TestimCard>
       </div>
-      <div class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
+      <div v-else class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
         <TestimCard2 :testimContent="slide"></TestimCard2>
       </div>
       <!-- <div class="carousel-cell" v-for="slide in testimContent.slides">
@@ -28,6 +28,9 @@ import TestimCard4 from "@/components/cards/testimonial/TestimCard4";
 import slides from "@/assets/resources/testim-quotes.js"
 
 export default {
+  props: [
+    "normalQuotes"
+  ],
   components: {
     Flickity,
     TestimCard,
