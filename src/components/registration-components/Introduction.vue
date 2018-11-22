@@ -17,7 +17,7 @@
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   div{
     text-align: center;
   }

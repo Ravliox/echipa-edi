@@ -59,7 +59,7 @@ export default {
 
 
 
-<style scoped>
+<style scoped lang="scss">
 .block{
   display: inline-block;
   margin: 8px;

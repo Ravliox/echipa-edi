@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
+import VueResource from 'vue-resource'
 
 import VueI18n from 'vue-i18n'
 import en from './locales/en.json'
@@ -37,6 +38,7 @@ Vue.use(VueScrollTo, {
 
 Vue.use(Flickity)
 Vue.use(VueWaypoint)
+Vue.use(VueResource);
 
 Vue.use(VueGoogleMaps, {
   load: {

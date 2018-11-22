@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #partners {
   margin-top : 30px;
   padding: 0 20%;

@@ -25,7 +25,7 @@
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 #eestec {
   min-width: 100%;
   background-image: url("../../assets/images/poza_grup.jpg");

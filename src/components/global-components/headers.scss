@@ -12,19 +12,16 @@
 
 .navbar-item{
   height: 100%;
-}
-
-a {
-  color: $primary-font-color;
+  color: $link-color;
 }
 
 .navbar-item img {
-  max-height: 5rem;
+  max-height: 4rem;
 }
 
 .navbar-item:hover{
   background-color: $secondary-color;
-  color: $primary-font-color;;
+  color: $primary-color;
 }
 
 .navbar-burger span {

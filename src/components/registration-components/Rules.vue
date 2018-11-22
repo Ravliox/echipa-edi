@@ -22,7 +22,7 @@ import Introduction from '@/components/registration-components/Introduction'
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	#rules {
 		margin-top: 50px;
 	}
