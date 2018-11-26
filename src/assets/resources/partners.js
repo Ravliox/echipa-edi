@@ -1,5 +1,15 @@
 let partners = [
   {
+    name: "PARTENERI GOLD",
+    content: [
+        {
+            name: "Iss",
+            logo: require("@/assets/images/emag.png"),
+            link: ""
+        }
+    ]
+},
+  {
       name: "PARTENERI SILVER",
       content: [
           {

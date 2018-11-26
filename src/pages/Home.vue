@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-
+    <Slider />
+    <pie-chart-countdown :ext_date="date" />
+    <schedule :multiline="true" />
+    <partners />
   </div>
 </template>
 
@@ -16,7 +19,7 @@ export default {
     return {
       ...resources,
       video: true,
-      date: '23 Dec 2018 18:00:00 GMT+0200'
+      date: '27 Nov 2018 18:00:00 GMT+0200'
     }
   }
 }

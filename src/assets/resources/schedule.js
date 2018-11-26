@@ -1,64 +1,24 @@
 let schedule = [
   {
-    day: "LUNI",
-    date: "10.10.2010",
-    trainings: [
-      {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
-      }
-    ]
-  },
-  {
     day: "MARTI",
-    date: "10.10.2010",
+    date: "17.11.2018",
     trainings: [
       {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
+        hourlyIntervals: '17:00 - 17:30',
+        training: 'Se primesc participantii'
       },
       {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
+        hourlyIntervals: '18:30 - 19:00',
+        training: 'Standup'
       },
       {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
-      }
-    ]
-  },
-  {
-    day: "MIERCURI",
-    date: "10.10.2010",
-    trainings: [
-      {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
+        hourlyIntervals: '19:00 - 21:00',
+        training: 'Jocuri'
       },
       {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
-      }
-    ]
-  },
-  {
-    day: "JOI",
-    date: "10.10.2010",
-    trainings: [
-      {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
-      }
-    ]
-  },
-  {
-    day: "VINERI",
-    date: "10.10.2010",
-    trainings: [
-      {
-        hourlyIntervals: '10:00 - 12:30',
-        training: 'Taking Decisions Under Pressure'
-      }
+        hourlyIntervals: '21:00 - 21:30',
+        training: 'Bauta pierzatorilor/Karaoke'
+      },
     ]
   }
 ]

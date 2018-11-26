@@ -1,6 +1,6 @@
 <template>
   <div v-if="!isFinished">
-    <h1 class="countdown-title"> Pie Chart Countdown </h1>
+    <h1 class="countdown-title"> Timpul pana la viitoare depresie </h1>
     <div class = "pie-chart-countdown">
       <vue-easy-pie-chart :track-color="trackColor" :size="200" :line-width="12" :scale-color="scaleColor" :bar-color="barColor" :percent="days">{{days}} {{$t('countdown.dz')}}</vue-easy-pie-chart>
       <vue-easy-pie-chart :track-color="trackColor" :size="200" :line-width="12" :scale-color="scaleColor" :bar-color="barColor" :percent="hourPercentege">{{hours}} {{$t('countdown.hrs')}}</vue-easy-pie-chart>
@@ -85,5 +85,6 @@ export default {
   display: block;
 }
 .countdown-title {
+  margin-top: 50px;
 }
 </style>
