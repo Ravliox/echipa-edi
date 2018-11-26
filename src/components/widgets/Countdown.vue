@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       now: Math.trunc((new Date()).getTime() / 1000),
-      date: Math.trunc(Date.parse(this.ext_date.str) / 1000)
+      date: Math.trunc(Date.parse(this.ext_date) / 1000)
     }
   },
   computed: {
@@ -77,5 +77,10 @@ export default {
   font-size: 5vh;
   font-weight: 100;
   margin: 10px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
 }
 </style>

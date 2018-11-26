@@ -10,6 +10,7 @@
       <router-view></router-view>
     </div>
     <!-- <HoverBar @hideBar="hideHoverBar" v-if="!hoverBar.value && hasHoverBar" :hoverBarData="hoverBar"></HoverBar> -->
+    <ToTopArrrow />
     <Footer @stop="stopHoverBar"></Footer>
   </div>
 </template>
@@ -20,13 +21,15 @@ import NormalHeader from '@/components/global-components/NormalHeader'
 import InvertedHeader from '@/components/global-components/InvertedHeader'
 import Footer from '@/components/global-components/Footer'
 import HoverBar from '@/components/global-components/HoverBar'
+import ToTopArrrow from '@/components/widgets/ToTopArrow'
 
 export default {
   components: {
     NormalHeader,
     InvertedHeader,
     Footer,
-    HoverBar
+    HoverBar,
+    ToTopArrrow
   },
   data() {
     return {

@@ -48,7 +48,7 @@ img{
 .box{
   display:inline-block;
   height: 100%;
-  width: 275px;
+  width: 100%;
 }
 img {
 	margin: auto;

@@ -14,6 +14,10 @@ export default {
   width: 100%;
   height: 100%;
   background-color: blue;
+  // background-image: url('../slide-images/background.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
 }
 </style>
 

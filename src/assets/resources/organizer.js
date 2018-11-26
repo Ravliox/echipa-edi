@@ -1,4 +1,4 @@
-[
+let organizers = [
     { 
         name: "Iulia Iacob", 
         function: "Chairwomen", 
@@ -15,3 +15,5 @@
         img: "https://picsum.photos/200/300?image=0"
     }
 ]
+
+export default organizers;

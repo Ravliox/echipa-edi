@@ -1,5 +1,5 @@
 <template>
-  <div id = "inverted-header">
+  <div id = "inverted-header" :class="{'absolute': data.transparent}">
     <nav class = "navbar" :class="{'transparent': data.transparent}">
       <div class = "navbar-menu" v-bind:class="{'is-active': isActive, 'transparent': data.transparent}" id="navMenu">
         <div class ="navbar-start" v-on:click="deactivate">

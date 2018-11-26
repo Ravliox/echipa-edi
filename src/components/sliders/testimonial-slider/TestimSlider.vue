@@ -5,15 +5,9 @@
       <div v-if = "!normalQuotes" class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
         <TestimCard  :testimContent="slide"></TestimCard>
       </div>
-      <div v-else class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
+      <div v-if = "normalQuotes" class="carousel-cell" v-for="(slide, index) in testimContent.slides" :key="index">
         <TestimCard2 :testimContent="slide"></TestimCard2>
       </div>
-      <!-- <div class="carousel-cell" v-for="slide in testimContent.slides">
-        <TestimCard3 v-for="cardContent in slide" :testimContent="cardContent"></TestimCard3>
-      </div>
-      <div class="carousel-cell" v-for="slide in testimContent.slides">
-        <TestimCard4 v-for="cardContent in slide" :testimContent="cardContent"></TestimCard4>
-      </div> -->
     </flickity>
   </div>
 </template>

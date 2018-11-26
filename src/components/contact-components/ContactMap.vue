@@ -1,6 +1,6 @@
 <template>
   <div id = "map">
-    <p class = "title font1"> {{$t('contactMap.title')}} </p>
+    <p class = "title"> {{$t('contactMap.title')}} </p>
     <div class = "columns">
 
 	    <div class="column is-7">

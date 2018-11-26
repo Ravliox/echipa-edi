@@ -1,19 +1,22 @@
 <template>
   <div id="videohero">
-    <video class="video" muted autoplay loop>
+    <video class="video" :class="{'no-video': hasVideo !== true}" autoplay muted loop>
       <source :src="video" type='video/mp4'>
     </video>
     <div class="content">
-      <VideoHeroContent/>
+      <MediaHeroContent />
     </div>
   </div>
 </template>
 
 <script>
-import VideoHeroContent from '@/components/heroes/VideoHeroContent'
+import MediaHeroContent from '@/components/heroes/MediaHeroContent'
 export default {
+  props: [
+    'hasVideo'
+  ],
   components: {
-    VideoHeroContent
+    MediaHeroContent
   },
   data () {
     return {
@@ -26,7 +29,7 @@ export default {
 <style scoped lang="scss">
 .content {
   position: absolute;
-  top: $video-hero-height/3;
+  top: $video-hero-height / 3;
   z-index: 20;
   width: 100%;
 }
@@ -44,6 +47,10 @@ export default {
 .video {
   width: 100%;
   object-fit: cover;
+}
+
+.no-video {
+  display: none;
 }
 
 @media only screen and (max-width: 767.5px) {
@@ -66,9 +73,9 @@ export default {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-height: 1025px) {
-  #videohero {
-    background-image: none;
-  }
-}
+// @media only screen and (min-width: 768px) and (max-height: 1025px) {
+//   #videohero {
+//     background-image: none;
+//   }
+// }
 </style>

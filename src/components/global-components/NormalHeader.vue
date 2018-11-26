@@ -1,5 +1,5 @@
 <template>
-  <div id = "normal-header">
+  <div id = "normal-header" :class="{'absolute': data.transparent}">
     <nav class = "navbar" :class="{'transparent': data.transparent}">
       <div class = "navbar-brand" :class="{'transparent': data.transparent}">
         <router-link to="/" class = "navbar-item"><img :src="logo"  alt = "Logo Eveniment"></router-link>

@@ -5,7 +5,7 @@
       <div class="column has-text-centered has-text-justified" v-for="(section, index) in numbers" :key="index">
         <img class = "pictogram" :src = "section.image">
         <h1>{{section.number}}</h1>
-        <h2>{{$t(section.text)}}</h2>
+        <h2>{{section.text}}</h2>
       </div>
     </div>
   </div>
